@@ -1,0 +1,40 @@
+@import '../../../websrc/less/variables';
+// ---------------------------------------------
+// Block '.nav'
+// ---------------------------------------------
+.nav{
+    position: relative;
+    background: #232323;
+
+    & &__menu{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    & &__item{
+        display: inline-block;
+    }
+
+    & &__link{
+        display: inline-block;
+        color: #fff;
+        font-size: 16px;
+        line-height: 1;
+        padding: 20px 30px;
+        text-decoration: none;
+        outline: none;
+        box-shadow: none;
+        font-weight: 400;
+        transition: all .3s;
+
+        &:hover{
+            cursor: pointer;
+            color: @color-yellow;
+        }
+
+        &.active{
+            color: @color-yellow;
+        }
+    }
+}

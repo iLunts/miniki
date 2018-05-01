@@ -1,0 +1,31 @@
+.nav {
+  position: relative;
+  background: #232323;
+}
+.nav .nav__menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav .nav__item {
+  display: inline-block;
+}
+.nav .nav__link {
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1;
+  padding: 20px 30px;
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+  font-weight: 400;
+  transition: all .3s;
+}
+.nav .nav__link:hover {
+  cursor: pointer;
+  color: #ffdb4d;
+}
+.nav .nav__link.active {
+  color: #ffdb4d;
+}

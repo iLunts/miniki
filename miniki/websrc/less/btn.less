@@ -1,0 +1,97 @@
+@import 'variables';
+// ---------------------------------------------
+.btn {
+    display: inline-block;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 40px;
+    padding: 0 17px;
+    border: 0;
+    border-radius: 4px;
+    outline: 0;
+    box-sizing: border-box;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .2s;
+    font-size: 13px;
+    line-height: 38px;
+    font-weight: 400;
+    color: #222;
+    outline: none;
+    
+    &:hover {
+        box-shadow: none;
+        outline: none;
+    }
+
+    &:disabled,
+    &.disabled{
+        opacity: .25;
+        cursor: default;
+    }
+    
+    &:active {
+        
+    }
+
+    & + &{
+        margin-left: 10px;
+    }
+
+    
+    // -----------------------------------------------------------------
+    // All elements
+    // -----------------------------------------------------------------
+
+    // Element '.btn .btn__icon'
+    & &__icon{
+        width: 12px;
+        height: 12px;
+        margin-right: 6px;
+    }
+
+    // Element '.btn .btn__text'
+    & &__text{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+}
+
+// -----------------------------------------------------------------
+// Block '.link'
+// -----------------------------------------------------------------
+.link{
+    color: inherit;
+    background: none;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    
+    &:hover{
+        text-decoration: none;
+    }
+
+    // ------------------------------------------------------------
+    // All modificators
+    // ------------------------------------------------------------
+    // Modificator '.link.link--dashed'
+    &&--dashed{
+        border-bottom: 1px dashed;
+    }
+    
+    // Modificator '.link.link--line'
+    &&--line{
+        text-decoration: underline;
+    }
+}
+
+@media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max){
+
+
+
+}
