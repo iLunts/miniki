@@ -11,6 +11,7 @@ import { ServicePageComponent } from './service-page/service-page.component';
 import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { TabsModule } from 'ngx-bootstrap';
+import { CollapseModule } from 'ngx-bootstrap';
 import { BuggerComponent } from './home-page/bugger/bugger.component';
 import { LoaderComponent } from './home-page/loader/loader.component';
 import { WheelComponent } from './home-page/wheel/wheel.component';
@@ -40,6 +41,7 @@ const routes = [
     AppRoutingModule,
     RouterModule.forRoot(routes),
     TabsModule.forRoot(),
+    CollapseModule.forRoot(),
     // GalleryModule.forRoot(),
     NgxGalleryModule
   ],

@@ -19,46 +19,133 @@ export class BuggerComponent implements OnInit {
 
 		this.galleryOptions = [
 			{
-				width: '600px',
-				height: '400px',
-				thumbnailsColumns: 4
+				// width: '600px',
+				// height: '400px',
+				width: '100%',
+				height: '600px',
+				fullWidth: false,
+				thumbnailsColumns: 10,
+				imagePercent: 100,
+				imageAutoPlay: true,
+				imageInfinityMove: true,
+				thumbnailsPercent: 20,
+				previewCloseOnEsc: true,
+				previewCloseOnClick: true,
+
 			}
 		];
 
 		this.galleryImages = [
 			{
-				small: 'https://lukasz-galka.github.io/ngx-gallery-demo/assets/img/1-small.jpeg',
-				medium: 'https://lukasz-galka.github.io/ngx-gallery-demo/assets/img/1-medium.jpeg',
-				big: 'https://lukasz-galka.github.io/ngx-gallery-demo/assets/img/1-big.jpeg'
+				small: 'assets/img/bugger/caterpillar/work/5.jpg',
+				medium: 'assets/img/bugger/caterpillar/work/5.jpg',
+				big: 'assets/img/bugger/caterpillar/work/5.jpg'
 			},
 			{
-				small: 'https://lukasz-galka.github.io/ngx-gallery-demo/assets/img/2-small.jpeg',
-				medium: 'https://lukasz-galka.github.io/ngx-gallery-demo/assets/img/2-medium.jpeg',
-				big: 'https://lukasz-galka.github.io/ngx-gallery-demo/assets/img/2-big.jpeg'
+				small: 'assets/img/bugger/caterpillar/work/6.jpg',
+				medium: 'assets/img/bugger/caterpillar/work/6.jpg',
+				big: 'assets/img/bugger/caterpillar/work/6.jpg'
 			},
-			{
-				small: 'https://lukasz-galka.github.io/ngx-gallery-demo/assets/img/3-small.jpeg',
-				medium: 'https://lukasz-galka.github.io/ngx-gallery-demo/assets/img/3-medium.jpeg',
-				big: 'https://lukasz-galka.github.io/ngx-gallery-demo/assets/img/3-big.jpeg'
-			},
-			{
-				small: 'https://lukasz-galka.github.io/ngx-gallery-demo/assets/img/4-small.jpeg',
-				medium: 'https://lukasz-galka.github.io/ngx-gallery-demo/assets/img/4-medium.jpeg',
-				big: 'https://lukasz-galka.github.io/ngx-gallery-demo/assets/img/4-big.jpeg'
-			},
-			{
-				small: 'https://lukasz-galka.github.io/ngx-gallery-demo/assets/img/5-small.jpeg',
-				medium: 'https://lukasz-galka.github.io/ngx-gallery-demo/assets/img/5-medium.jpeg',
-				big: 'https://lukasz-galka.github.io/ngx-gallery-demo/assets/img/5-big.jpeg'
-			}
 		];
 	}
 
 	buggerArray = [
 		{
+			category: 'Мини-экскаватор',
+			teaser: 'assets/img/bugger/caterpillar/teaser-caterpillar-301-8C.jpg',
 			model: 'Caterpillar 301.8C',
-			desc: '',
-		}
+			desc: 'Гидравлический экскаватор Caterpillar 301.8C оснащается двигателем C9 с технологией ACERT, что обеспечивает более высокую топливную экономичность и повышенный ресурс.',
+			video: '123123',
+			price: '40',
+			minTime: '4',
+			phones: [
+				{
+					operator: 'velcom', number: '+375 (29) 601-22-11'
+				}
+			],
+
+		},
+		{
+			category: 'Мини-экскаватор',
+			teaser: 'assets/img/bugger/caterpillar/teaser-caterpillar-301-8C.jpg',
+			model: 'Volvo EC 20B XTV',
+			desc: 'Гидравлический экскаватор Caterpillar 301.8C оснащается двигателем C9 с технологией ACERT, что обеспечивает более высокую топливную экономичность и повышенный ресурс.',
+			video: '123123',
+			price: '40',
+			minTime: '4',
+			phones: [
+				{
+					operator: 'velcom', number: '+375 (29) 601-22-11'
+				}
+			],
+
+		},
+		{
+			category: 'Мини-экскаватор',
+			teaser: 'assets/img/bugger/caterpillar/teaser-caterpillar-301-8C.jpg',
+			model: 'JCB 8020',
+			desc: 'Гидравлический экскаватор Caterpillar 301.8C оснащается двигателем C9 с технологией ACERT, что обеспечивает более высокую топливную экономичность и повышенный ресурс.',
+			video: '',
+			price: '40',
+			minTime: '4',
+			phones: [
+				{
+					operator: 'velcom', number: '+375 (29) 683-25-03'
+				}
+			],
+
+		},
+		{
+			category: 'Мини-экскаватор',
+			teaser: 'assets/img/bugger/caterpillar/teaser-caterpillar-301-8C.jpg',
+			model: 'Kobelco SX30SR',
+			desc: 'Гидравлический экскаватор Caterpillar 301.8C оснащается двигателем C9 с технологией ACERT, что обеспечивает более высокую топливную экономичность и повышенный ресурс.',
+			video: '',
+			price: '40',
+			minTime: '4',
+			phones: [
+				{
+					operator: 'velcom', number: '+375 (29) 640-43-17'
+				}
+			],
+
+		},
+		{
+			category: 'Мини-экскаватор',
+			teaser: 'assets/img/bugger/caterpillar/teaser-caterpillar-301-8C.jpg',
+			model: 'Bobcat e16',
+			desc: 'Гидравлический экскаватор Bobcat e16 оснащается двигателем C9 с технологией ACERT, что обеспечивает более высокую топливную экономичность и повышенный ресурс.',
+			video: '',
+			price: '40',
+			minTime: '4',
+			phones: [
+				{
+					operator: 'velcom', number: '+375 (29) 902-21-92'
+				},
+				{
+					operator: 'mts', number: '+375 (29) 577-27-73'
+				},
+			],
+
+		},
+		{
+			category: 'Мини-экскаватор',
+			teaser: 'assets/img/bugger/caterpillar/teaser-caterpillar-301-8C.jpg',
+			model: 'Kubota KX36-3',
+			desc: 'Гидравлический экскаватор Kubota KX36-3 оснащается двигателем C9 с технологией ACERT, что обеспечивает более высокую топливную экономичность и повышенный ресурс.',
+			video: '',
+			price: '40',
+			minTime: '4',
+			phones: [
+				{
+					operator: 'velcom', number: '+375 (29) 902-21-92'
+				},
+				{
+					operator: 'mts', number: '+375 (29) 577-27-73'
+				},
+			],
+
+		},
 	];
 
 }

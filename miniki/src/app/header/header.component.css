@@ -2,7 +2,13 @@
   position: relative;
   background: #232323;
 }
+.nav .nav__logo {
+  display: inline-block;
+  width: 140px;
+  margin-right: 60px;
+}
 .nav .nav__menu {
+  display: inline-block;
   margin: 0;
   padding: 0;
   list-style: none;
