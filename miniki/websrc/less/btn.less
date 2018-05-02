@@ -90,6 +90,22 @@
     &&--line{
         text-decoration: underline;
     }
+    
+    // Modificator '.link.link--phone'
+    &&--phone{
+        display: inline-block;
+        padding: 1rem;
+        font-size: 2.5rem;
+        font-weight: 600;
+        background: @color-yellow;
+        border-radius: 5px;
+        transition: all .3s;
+        
+        &:hover{
+            color: #333;
+            background: lighten(@color-yellow, 10%);
+        }
+    }
 }
 
 @media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max){

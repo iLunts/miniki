@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { GalleryItem, ImageItem } from '@ngx-gallery/core';
+import { GalleryItem, ImageItem } from '@ngx-gallery/core';
 import { NgxGalleryOptions, NgxGalleryImage } from 'ngx-gallery';
 
 @Component({
@@ -63,7 +63,10 @@ export class BuggerComponent implements OnInit {
 					operator: 'velcom', number: '+375 (29) 601-22-11'
 				}
 			],
-
+			work: [
+				'assets/img/bugger/caterpillar/work/5.jpg',
+				'assets/img/bugger/caterpillar/work/6.jpg',
+			]
 		},
 		{
 			category: 'Мини-экскаватор',
@@ -79,9 +82,9 @@ export class BuggerComponent implements OnInit {
 				}
 			],
 			work: [
-				{ big: 'assets/img/bugger/volvo/work/1.jpg' },
-				{ big: 'assets/img/bugger/volvo/work/2.jpg' },
-				{ big: 'assets/img/bugger/volvo/work/3.jpg' },
+				'assets/img/bugger/volvo/work/1.jpg',
+				'assets/img/bugger/volvo/work/2.jpg',
+				'assets/img/bugger/volvo/work/3.jpg',
 			]
 
 		},
@@ -98,6 +101,10 @@ export class BuggerComponent implements OnInit {
 					operator: 'velcom', number: '+375 (29) 683-25-03'
 				}
 			],
+			work: [
+				'assets/img/bugger/jcb/work/1.jpg',
+				'assets/img/bugger/jcb/work/2.jpg',
+			]
 
 		},
 		{
@@ -113,6 +120,9 @@ export class BuggerComponent implements OnInit {
 					operator: 'velcom', number: '+375 (29) 640-43-17'
 				}
 			],
+			work: [
+				'assets/img/bugger/kobelco/work/1.jpg',
+			]
 
 		},
 		{
@@ -131,6 +141,10 @@ export class BuggerComponent implements OnInit {
 					operator: 'mts', number: '+375 (29) 577-27-73'
 				},
 			],
+			work: [
+				'assets/img/bugger/bobcat/work/1.jpg',
+				'assets/img/bugger/bobcat/work/2.jpg',
+			]
 
 		},
 		{
@@ -149,7 +163,9 @@ export class BuggerComponent implements OnInit {
 					operator: 'mts', number: '+375 (29) 577-27-73'
 				},
 			],
-
+			work: [
+				'assets/img/bugger/kubota/work/1.jpg',
+			]
 		},
 	];
 

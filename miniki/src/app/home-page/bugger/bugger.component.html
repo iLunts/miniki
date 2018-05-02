@@ -10,7 +10,7 @@
                     {{item.desc}}
                 </p>
                 <p *ngFor="let phone of item.phones">
-                    <a href="tel:{{phone.number}}" class="link link--dashed t--h3 t--semi-bold">{{phone.number}}</a>
+                    <a href="tel:{{phone.number}}" class="link link--phone">{{phone.number}}</a>
                 </p>
             </div>
             <div class="col--1-5 t--c">
@@ -29,8 +29,14 @@
     </div>
 
     <div class="panel panel--gallery">
-        <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
-        <!-- <ngx-gallery [options]="galleryOptions" [images]="item.work"></ngx-gallery> -->
+
+        <carousel>
+            <slide *ngFor="let photo of item.work">
+                <img [src]="photo" alt="" style="display: block; width: 100%;">
+            </slide>
+        </carousel>
+
+        <!-- <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery> -->
     </div>
 
     <div class="panel panel--video" *ngIf="item.video">

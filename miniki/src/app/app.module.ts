@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { TabsModule } from 'ngx-bootstrap';
 import { CollapseModule } from 'ngx-bootstrap';
+import { CarouselModule } from 'ngx-bootstrap';
 import { BuggerComponent } from './home-page/bugger/bugger.component';
 import { LoaderComponent } from './home-page/loader/loader.component';
 import { WheelComponent } from './home-page/wheel/wheel.component';
@@ -42,6 +43,7 @@ const routes = [
     RouterModule.forRoot(routes),
     TabsModule.forRoot(),
     CollapseModule.forRoot(),
+    CarouselModule.forRoot(),
     // GalleryModule.forRoot(),
     NgxGalleryModule
   ],
