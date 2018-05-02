@@ -67,8 +67,8 @@ export class BuggerComponent implements OnInit {
 		},
 		{
 			category: 'Мини-экскаватор',
-			teaser: 'assets/img/bugger/caterpillar/teaser-caterpillar-301-8C.jpg',
-			model: 'Volvo EC 20B XTV',
+			teaser: 'assets/img/bugger/volvo/teaser-volvo-ec20.jpg',
+			model: 'Volvo EC20B XTV',
 			desc: 'Гидравлический экскаватор Caterpillar 301.8C оснащается двигателем C9 с технологией ACERT, что обеспечивает более высокую топливную экономичность и повышенный ресурс.',
 			video: '123123',
 			price: '40',
@@ -78,11 +78,16 @@ export class BuggerComponent implements OnInit {
 					operator: 'velcom', number: '+375 (29) 601-22-11'
 				}
 			],
+			work: [
+				{ big: 'assets/img/bugger/volvo/work/1.jpg' },
+				{ big: 'assets/img/bugger/volvo/work/2.jpg' },
+				{ big: 'assets/img/bugger/volvo/work/3.jpg' },
+			]
 
 		},
 		{
 			category: 'Мини-экскаватор',
-			teaser: 'assets/img/bugger/caterpillar/teaser-caterpillar-301-8C.jpg',
+			teaser: 'assets/img/bugger/jcb/teaser-jcb-8020.jpg',
 			model: 'JCB 8020',
 			desc: 'Гидравлический экскаватор Caterpillar 301.8C оснащается двигателем C9 с технологией ACERT, что обеспечивает более высокую топливную экономичность и повышенный ресурс.',
 			video: '',
@@ -97,7 +102,7 @@ export class BuggerComponent implements OnInit {
 		},
 		{
 			category: 'Мини-экскаватор',
-			teaser: 'assets/img/bugger/caterpillar/teaser-caterpillar-301-8C.jpg',
+			teaser: 'assets/img/bugger/kobelco/teaser-kobelco-sk35-sr.jpg',
 			model: 'Kobelco SX30SR',
 			desc: 'Гидравлический экскаватор Caterpillar 301.8C оснащается двигателем C9 с технологией ACERT, что обеспечивает более высокую топливную экономичность и повышенный ресурс.',
 			video: '',
@@ -112,7 +117,7 @@ export class BuggerComponent implements OnInit {
 		},
 		{
 			category: 'Мини-экскаватор',
-			teaser: 'assets/img/bugger/caterpillar/teaser-caterpillar-301-8C.jpg',
+			teaser: 'assets/img/bugger/bobcat/teaser-bobcat-e16.jpg',
 			model: 'Bobcat e16',
 			desc: 'Гидравлический экскаватор Bobcat e16 оснащается двигателем C9 с технологией ACERT, что обеспечивает более высокую топливную экономичность и повышенный ресурс.',
 			video: '',
@@ -130,7 +135,7 @@ export class BuggerComponent implements OnInit {
 		},
 		{
 			category: 'Мини-экскаватор',
-			teaser: 'assets/img/bugger/caterpillar/teaser-caterpillar-301-8C.jpg',
+			teaser: 'assets/img/bugger/kubota/teaser-kubota-kx36-3.jpg',
 			model: 'Kubota KX36-3',
 			desc: 'Гидравлический экскаватор Kubota KX36-3 оснащается двигателем C9 с технологией ACERT, что обеспечивает более высокую топливную экономичность и повышенный ресурс.',
 			video: '',
