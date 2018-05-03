@@ -4,6 +4,52 @@ gallery {
     height: 500px; // The gallery must have a height
 }
 
+// ---------------------------------------------
+// Block '.gallery'
+// ---------------------------------------------
+.gallery{
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & &__item{
+        position: relative;
+        display: inline-block;
+        // width: 30%;
+        width: 100%;
+        padding: 3px;
+        background: #ddd;
+        border-radius: 3px;
+        transition: all .3s;
+        
+        &:hover{
+            cursor: pointer;
+            transition: all .3s;
+            
+            &:after{
+                content: '';
+                position: absolute;
+                left: 3px;
+                right: 3px;
+                top: 3px;
+                bottom: 3px;
+                background-color: rgba(255, 219, 77, .7);
+                transition: all .3s;
+                background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik01MDguMTc3LDI0NS45OTVDNTAzLjYwNywyNDAuODk3LDM5My42ODIsMTIxLDI1NiwxMjFTOC4zOTQsMjQwLjg5NywzLjgyMywyNDUuOTk1Yy01LjA5OCw1LjY5OC01LjA5OCwxNC4zMTIsMCwyMC4wMSAgICBDOC4zOTQsMjcxLjEwMywxMTguMzIsMzkxLDI1NiwzOTFzMjQ3LjYwNi0xMTkuODk3LDI1Mi4xNzctMTI0Ljk5NUM1MTMuMjc0LDI2MC4zMDcsNTEzLjI3NCwyNTEuNjkzLDUwOC4xNzcsMjQ1Ljk5NXogTTI1NiwzNjEgICAgYy01Ny44OTEsMC0xMDUtNDcuMTA5LTEwNS0xMDVzNDcuMTA5LTEwNSwxMDUtMTA1czEwNSw0Ny4xMDksMTA1LDEwNVMzMTMuODkxLDM2MSwyNTYsMzYxeiIgZmlsbD0iIzIyMjIyMiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTI3MSwyMjZjMC0xNS4wOSw3LjQ5MS0yOC4zNjUsMTguODg3LTM2LjUzQzI3OS42NjEsMTg0LjIzNSwyNjguMjU1LDE4MSwyNTYsMTgxYy00MS4zNTMsMC03NSwzMy42NDctNzUsNzUgICAgYzAsNDEuMzUzLDMzLjY0Nyw3NSw3NSw3NWMzNy4wMjQsMCw2Ny42NjgtMjcuMDM0LDczLjcyMi02Mi4zNThDMjk5LjUxNiwyNzguMzY3LDI3MSwyNTUuNTIyLDI3MSwyMjZ6IiBmaWxsPSIjMjIyMjIyIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+                background-position: center;
+                background-size: 40px;
+                background-repeat: no-repeat;
+            }
+        }
+    
+        & + .gallery__item{
+            margin-left: 5px;
+        }
+    }
+}
+
 @media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max){
 
 

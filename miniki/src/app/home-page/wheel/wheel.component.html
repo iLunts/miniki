@@ -1,3 +1,153 @@
-<p>
-  wheel works!
-</p>
+<div>
+	<div class="panel" *ngFor="let item of wheelArray">
+		<div class="panel__content">
+
+			<div class="grid">
+				<div class="col--1-5">
+					<img [src]="item.teaser" alt="">
+
+					<div class="gallery m--t-md">
+						<div class="gallery__item" *ngFor="let photo of item.gallery">
+							<img [src]="photo" alt="">
+						</div>
+					</div>
+
+				</div>
+				<div class="col--3-5">
+					<h3 class="t--h3 t--bold m--b">{{item.category}} {{item.model}}</h3>
+					<p class="m--b-sm">
+						{{item.desc}}
+					</p>
+					<p *ngFor="let phone of item.phones">
+						<a href="tel:{{phone.number}}" class="link link--phone">{{phone.number}}</a>
+					</p>
+				</div>
+				<div class="col--1-5 t--c">
+					<p class="t--c m--b t--muted t--semi-bold">Цена за час:</p>
+					<div class="price">
+						<span class="price__dig">{{item.price}}</span>
+						<div class="price__body">
+							<span class="price__currency">руб.</span>
+							<span class="price__in">час.</span>
+						</div>
+					</div>
+					<p class="t--c m--t-lg t--muted t--semi-bold">Мин. заказ:</p>
+					<p class="t--c m--b">
+						<span class="t--h2 t--semi-bold">{{item.minTime}}</span>
+						<small class="t--h5">часа</small>
+					</p>
+				</div>
+			</div>
+
+		</div>
+		<!-- <div class="panel__content panel__content--gallery">
+            <div class="gallery">
+                <div class="gallery__item">
+                    <img [src]="item." alt="">
+                </div>
+            </div>
+        </div> -->
+	</div>
+
+	<!-- <div class="panel panel--gallery">
+
+        <carousel>
+            <slide *ngFor="let photo of item.work">
+                <img [src]="photo" alt="" style="display: block; width: 100%;">
+            </slide>
+        </carousel>
+
+    </div> -->
+
+	<!-- <div class="panel panel--video" *ngIf="item.video">
+        <p class="panel__title">
+            <button (click)="isCollapsedVideo = !isCollapsedVideo" class="panel__title-link">Видеопрезентация {{item.category}} {{item.model}}</button>
+        </p>
+
+        <div class="panel__content" [collapse]="!isCollapsedVideo">
+            <video width="100%" controls>
+                <source [src]="item.video" type="video/mp4">
+                <source [src]="item.video" type="video/ogg"> Ваш браузер не поддерживает HTML5 видео.
+            </video>
+        </div>
+    </div> -->
+
+	<!-- <div class="panel">
+        <h3 class="t--h2 m--b" (click)="isCollapsedSpec = !isCollapsedSpec">Технические характеристики</h3>
+        <div class="panel__content" [collapse]="!isCollapsedSpec">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>Эксплуатационная масса</td>
+                        <td>32, 200 т</td>
+                    </tr>
+                    <tr>
+                        <td>Вместимость ковша (PCSA)</td>
+                        <td>1,44 м
+                            <sup>3</sup>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Наибольшее усилие копания на ковше (SAE)</td>
+                        <td>132,4 кН</td>
+                    </tr>
+                    <tr>
+                        <td>Длина в транспортном положении</td>
+                        <td>10980 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Высота по стреле в транспортном положении</td>
+                        <td>3380 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Высота по кабине</td>
+                        <td>3090 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Высота до противовеса</td>
+                        <td>1200 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Ширина</td>
+                        <td>3280 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Максимальная досягаемость горизонтальная
+                            <br>
+                            <span>(по поверхности) А
+                                <sup>1</sup>
+                            </span>
+                        </td>
+                        <td>10940 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Максимальная досягаемость вертикальная D</td>
+                        <td>10310 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Максимальная досягаемость в глубину B</td>
+                        <td>7370 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Максимальная глубина копания C</td>
+                        <td>6360 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Максимальная высота выгрузки Е</td>
+                        <td>7240 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Минимальный радиус поворота платформы с грузом F</td>
+                        <td>4470 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Давление на грунт</td>
+                        <td>0,62 кгс/см
+                            <sup>2</sup>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div> -->
+</div>

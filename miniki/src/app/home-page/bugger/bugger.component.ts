@@ -37,14 +37,14 @@ export class BuggerComponent implements OnInit {
 
 		this.galleryImages = [
 			{
-				small: 'assets/img/bugger/caterpillar/work/5.jpg',
-				medium: 'assets/img/bugger/caterpillar/work/5.jpg',
-				big: 'assets/img/bugger/caterpillar/work/5.jpg'
+				small: 'assets/img/bugger/caterpillar/gallery/5.jpg',
+				medium: 'assets/img/bugger/caterpillar/gallery/5.jpg',
+				big: 'assets/img/bugger/caterpillar/gallery/5.jpg'
 			},
 			{
-				small: 'assets/img/bugger/caterpillar/work/6.jpg',
-				medium: 'assets/img/bugger/caterpillar/work/6.jpg',
-				big: 'assets/img/bugger/caterpillar/work/6.jpg'
+				small: 'assets/img/bugger/caterpillar/gallery/6.jpg',
+				medium: 'assets/img/bugger/caterpillar/gallery/6.jpg',
+				big: 'assets/img/bugger/caterpillar/gallery/6.jpg'
 			},
 		];
 	}
@@ -54,7 +54,7 @@ export class BuggerComponent implements OnInit {
 			category: 'Мини-экскаватор',
 			teaser: 'assets/img/bugger/caterpillar/teaser-caterpillar-301-8C.jpg',
 			model: 'Caterpillar 301.8C',
-			desc: 'Гидравлический экскаватор Caterpillar 301.8C оснащается двигателем C9 с технологией ACERT, что обеспечивает более высокую топливную экономичность и повышенный ресурс.',
+			desc: 'Аренда мини-экскаватора CAT 301.8C на резиновом гус. ходу. Ковши 20, 25, 30, 40, 50, 60см Рытьё траншей (под ленточные фундаменты, бассейны,газ, воду, канализацию и т.п) Планировка и расчистка территории. Форма оплаты любая!',
 			video: '123123',
 			price: '40',
 			minTime: '4',
@@ -63,16 +63,16 @@ export class BuggerComponent implements OnInit {
 					operator: 'velcom', number: '+375 (29) 601-22-11'
 				}
 			],
-			work: [
-				'assets/img/bugger/caterpillar/work/5.jpg',
-				'assets/img/bugger/caterpillar/work/6.jpg',
+			gallery: [
+				'assets/img/bugger/caterpillar/gallery/5.jpg',
+				'assets/img/bugger/caterpillar/gallery/6.jpg',
 			]
 		},
 		{
 			category: 'Мини-экскаватор',
 			teaser: 'assets/img/bugger/volvo/teaser-volvo-ec20.jpg',
 			model: 'Volvo EC20B XTV',
-			desc: 'Гидравлический экскаватор Caterpillar 301.8C оснащается двигателем C9 с технологией ACERT, что обеспечивает более высокую топливную экономичность и повышенный ресурс.',
+			desc: 'Аренда мини-экскаватора Volvo EC20B XTV на резиновом гус. ходу. Рытьё траншей (под ленточные фундаменты, бассейны,газ, воду, канализацию и т.п) Планировка и расчистка территории. Форма оплаты любая!',
 			video: '123123',
 			price: '40',
 			minTime: '4',
@@ -81,10 +81,10 @@ export class BuggerComponent implements OnInit {
 					operator: 'velcom', number: '+375 (29) 601-22-11'
 				}
 			],
-			work: [
-				'assets/img/bugger/volvo/work/1.jpg',
-				'assets/img/bugger/volvo/work/2.jpg',
-				'assets/img/bugger/volvo/work/3.jpg',
+			gallery: [
+				'assets/img/bugger/volvo/gallery/1.jpg',
+				// 'assets/img/bugger/volvo/gallery/2.jpg',
+				'assets/img/bugger/volvo/gallery/3.jpg',
 			]
 
 		},
@@ -92,7 +92,7 @@ export class BuggerComponent implements OnInit {
 			category: 'Мини-экскаватор',
 			teaser: 'assets/img/bugger/jcb/teaser-jcb-8020.jpg',
 			model: 'JCB 8020',
-			desc: 'Гидравлический экскаватор Caterpillar 301.8C оснащается двигателем C9 с технологией ACERT, что обеспечивает более высокую топливную экономичность и повышенный ресурс.',
+			desc: 'Миниэкскаватор JCB с квалифицированным оператором окажет весь спектр земляных работ: Ковши 20, 30, 40, 60, 100(планировочный)',
 			video: '',
 			price: '40',
 			minTime: '4',
@@ -101,9 +101,9 @@ export class BuggerComponent implements OnInit {
 					operator: 'velcom', number: '+375 (29) 683-25-03'
 				}
 			],
-			work: [
-				'assets/img/bugger/jcb/work/1.jpg',
-				'assets/img/bugger/jcb/work/2.jpg',
+			gallery: [
+				'assets/img/bugger/jcb/gallery/1.jpg',
+				'assets/img/bugger/jcb/gallery/2.jpg',
 			]
 
 		},
@@ -111,7 +111,7 @@ export class BuggerComponent implements OnInit {
 			category: 'Мини-экскаватор',
 			teaser: 'assets/img/bugger/kobelco/teaser-kobelco-sk35-sr.jpg',
 			model: 'Kobelco SX30SR',
-			desc: 'Гидравлический экскаватор Caterpillar 301.8C оснащается двигателем C9 с технологией ACERT, что обеспечивает более высокую топливную экономичность и повышенный ресурс.',
+			desc: '',
 			video: '',
 			price: '40',
 			minTime: '4',
@@ -120,8 +120,8 @@ export class BuggerComponent implements OnInit {
 					operator: 'velcom', number: '+375 (29) 640-43-17'
 				}
 			],
-			work: [
-				'assets/img/bugger/kobelco/work/1.jpg',
+			gallery: [
+				'assets/img/bugger/kobelco/gallery/1.jpg',
 			]
 
 		},
@@ -141,9 +141,9 @@ export class BuggerComponent implements OnInit {
 					operator: 'mts', number: '+375 (29) 577-27-73'
 				},
 			],
-			work: [
-				'assets/img/bugger/bobcat/work/1.jpg',
-				'assets/img/bugger/bobcat/work/2.jpg',
+			gallery: [
+				'assets/img/bugger/bobcat/gallery/1.jpg',
+				'assets/img/bugger/bobcat/gallery/2.jpg',
 			]
 
 		},
@@ -163,8 +163,8 @@ export class BuggerComponent implements OnInit {
 					operator: 'mts', number: '+375 (29) 577-27-73'
 				},
 			],
-			work: [
-				'assets/img/bugger/kubota/work/1.jpg',
+			gallery: [
+				'assets/img/bugger/kubota/gallery/1.jpg',
 			]
 		},
 	];
