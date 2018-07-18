@@ -1,0 +1,59 @@
+<section class="home">
+  <h1 class="home__title t--title">Аренда полноповоротных колесных экскаваторов на пневмоходу</h1>
+  <h2 class="t--subtitle">
+    Опыт наших операторов позволяет не только сэкономить ваши деньги, но и получить качество работ исключительно на высшем уровне.
+  </h2>
+  <p class="t--note">
+    От правильности выполнения работ в дальнейшем будут зависеть многие технологические и производственные процессы строительства.
+  </p>
+
+  <app-tab-menu></app-tab-menu>
+
+  <div class="panel" *ngFor="let item of wheelArray">
+    <div class="panel__content">
+
+      <div class="grid">
+        <div class="col--xlg-1-5 col--lg-1-5 col--md-1-5 col--sm-1-1 col-xs-1-1">
+          <img [src]="item.teaser" alt="">
+
+          <div class="gallery m--t-md">
+            <div class="gallery__item" *ngFor="let photo of item.gallery">
+              <img [src]="photo" alt="">
+            </div>
+          </div>
+
+        </div>
+        <div class="col--xlg-3-5 col--lg-3-5 col--md-3-5 col--sm-1-1 col--xs-1-1">
+          <h3 class="t--h3 t--bold m--b m-xs--v">{{item.category}} {{item.model}}</h3>
+          <p class="m--b-sm">
+            {{item.desc}}
+          </p>
+          <p *ngFor="let phone of item.phones">
+            <a href="tel:{{phone.number}}" class="link link--phone">{{phone.number}}</a>
+          </p>
+        </div>
+        <div class="col--xlg-1-5 col--lg-1-5 col--md-1-5 col--sm-1-1 col--xs-1-1 t--c">
+          <div class="grid grid--sm">
+            <div class="col--xlg-1-1 col--lg-1-1 col--md-1-1 col--sm-1-2 col--xs-1-2">
+              <p class="t--c m--b t--muted t--semi-bold">Цена за час:</p>
+              <div class="price">
+                <span class="price__dig">{{item.price}}</span>
+                <div class="price__body">
+                  <span class="price__currency">руб.</span>
+                  <span class="price__in">час.</span>
+                </div>
+              </div>
+            </div>
+            <div class="col--xlg-1-1 col--lg-1-1 col--md-1-1 col--sm-1-2 col--xs-1-2">
+              <p class="t--c m--t-lg m-xs--reset t--muted t--semi-bold">Мин. заказ:</p>
+              <p class="t--c m--b">
+                <span class="t--h2 t--semi-bold">{{item.minTime}}</span>
+                <small class="t--h5">часа</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
