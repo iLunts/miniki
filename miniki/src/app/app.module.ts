@@ -45,7 +45,7 @@ const routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, { useHash: true }),
     TabsModule.forRoot(),
     CollapseModule.forRoot(),
     CarouselModule.forRoot(),

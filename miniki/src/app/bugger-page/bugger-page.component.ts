@@ -116,7 +116,8 @@ export class BuggerPageComponent implements OnInit {
       ],
       gallery: [
         'assets/img/bugger/jcb/gallery/1.jpg',
-        'assets/img/bugger/jcb/gallery/2.jpg',
+        // 'assets/img/bugger/jcb/gallery/2.jpg',
+        'assets/img/bugger/jcb/gallery/3.jpg',
       ]
 
     },
@@ -181,6 +182,44 @@ export class BuggerPageComponent implements OnInit {
       ],
       gallery: [
         'assets/img/bugger/kubota/gallery/1.jpg',
+      ]
+    },
+    {
+      id: this.getRandomInt(),
+      category: 'Мини-экскаватор',
+      teaser: 'assets/img/bugger/komatsu/teaser-komatsu.jpg',
+      model: 'Komatsu PC14R-2',
+      desc: 'Аренда Мини-экскаватора. Ковши  от 20 - до 70. Бур от 20 - до 60..',
+      video: '',
+      price: '45-40',
+      minTime: '4',
+      phones: [
+        {
+          operator: 'velcom', number: '+375 (29) 651-25-01'
+        }
+      ],
+      gallery: [
+        'assets/img/bugger/komatsu/gallery/1.jpg',
+        'assets/img/bugger/komatsu/gallery/2.jpg',
+      ]
+    },
+    {
+      id: this.getRandomInt(),
+      category: 'Мини-экскаватор',
+      teaser: 'assets/img/bugger/new-holland/teaser-new-holland.jpg',
+      model: 'NEW HOLLAND E27.2SR',
+      desc: 'Аренда Мини-экскаватора. Ковши  от 20 - до 70. Бур от 20 - до 60..',
+      video: '',
+      price: '45-40',
+      minTime: '4',
+      phones: [
+        {
+          operator: 'velcom', number: '+375 (29) 651-25-01'
+        }
+      ],
+      gallery: [
+        'assets/img/bugger/new-holland/gallery/1.jpg',
+        'assets/img/bugger/new-holland/gallery/2.jpg',
       ]
     },
   ];

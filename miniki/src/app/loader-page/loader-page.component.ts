@@ -67,7 +67,7 @@ export class LoaderPageComponent implements OnInit {
       model: 'Bobcat T750',
       desc: 'Грузоподъемность номинал 1500кг, / мах до 2000кг. Ширина режущей кромки ковша 2032 мм Высота выгрузки, 3, 35 м',
       video: '',
-      price: '55',
+      price: '60',
       minTime: '4',
       phones: [
         {
@@ -78,27 +78,26 @@ export class LoaderPageComponent implements OnInit {
         'assets/img/loader/bobcat/gallery/1.jpg',
         'assets/img/loader/bobcat/gallery/2.jpg',
       ]
-
     },
     {
       id: this.getRandomInt(),
       category: 'Мини-погрузчик',
       teaser: 'assets/img/loader/case/teaser-case-410.jpg',
       model: 'CASE 410 3 series',
-      desc: '',
+      desc: 'Услуги мини-погрузчика, планировка, уборка снега, вывоз грунта, погрузочно-разгрузочные работы и т.д. На длительный срок скидки. С опытным водителем.',
       video: '',
-      price: '55',
+      price: '45 - 40',
       minTime: '4',
       phones: [
         {
           operator: 'velcom', number: '+375 (29) 640-43-17'
         }
       ],
-      // gallery: [
-      //   'assets/img/loader/case/gallery/1.jpg',
-      //   'assets/img/loader/case/gallery/2.jpg',
-      //   'assets/img/loader/case/gallery/3.jpg',
-      // ]
+      gallery: [
+        'assets/img/loader/case/gallery/1.jpg',
+        'assets/img/loader/case/gallery/2.jpg',
+        // 'assets/img/loader/case/gallery/3.jpg',
+      ]
 
     },
   ];
