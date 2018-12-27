@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { GalleryItem, ImageItem } from '@ngx-gallery/core';
-import { NgxGalleryOptions, NgxGalleryImage } from 'ngx-gallery';
+// import { GalleryItem, ImageItem } from '@ngx-gallery/core';
+// import { NgxGalleryOptions, NgxGalleryImage } from 'ngx-gallery';
 import { FormArray } from '@angular/forms';
 
 @Component({
@@ -10,43 +10,43 @@ import { FormArray } from '@angular/forms';
 })
 export class WheelExcavatorPageComponent implements OnInit {
 
-  galleryOptions: NgxGalleryOptions[];
-  galleryImages: NgxGalleryImage[];
+  // galleryOptions: NgxGalleryOptions[];
+  // galleryImages: NgxGalleryImage[];
 
   constructor() {}
 
   ngOnInit(): void {
 
-    this.galleryOptions = [
-      {
-        // width: '600px',
-        // height: '400px',
-        width: '100%',
-        height: '600px',
-        fullWidth: false,
-        thumbnailsColumns: 10,
-        imagePercent: 100,
-        imageAutoPlay: true,
-        imageInfinityMove: true,
-        thumbnailsPercent: 20,
-        previewCloseOnEsc: true,
-        previewCloseOnClick: true,
+    // this.galleryOptions = [
+    //   {
+    //     // width: '600px',
+    //     // height: '400px',
+    //     width: '100%',
+    //     height: '600px',
+    //     fullWidth: false,
+    //     thumbnailsColumns: 10,
+    //     imagePercent: 100,
+    //     imageAutoPlay: true,
+    //     imageInfinityMove: true,
+    //     thumbnailsPercent: 20,
+    //     previewCloseOnEsc: true,
+    //     previewCloseOnClick: true,
 
-      }
-    ];
+    //   }
+    // ];
 
-    this.galleryImages = [
-      {
-        small: 'assets/img/bugger/caterpillar/gallery/5.jpg',
-        medium: 'assets/img/bugger/caterpillar/gallery/5.jpg',
-        big: 'assets/img/bugger/caterpillar/gallery/5.jpg'
-      },
-      {
-        small: 'assets/img/bugger/caterpillar/gallery/6.jpg',
-        medium: 'assets/img/bugger/caterpillar/gallery/6.jpg',
-        big: 'assets/img/bugger/caterpillar/gallery/6.jpg'
-      },
-    ];
+  //   this.galleryImages = [
+  //     {
+  //       small: 'assets/img/bugger/caterpillar/gallery/5.jpg',
+  //       medium: 'assets/img/bugger/caterpillar/gallery/5.jpg',
+  //       big: 'assets/img/bugger/caterpillar/gallery/5.jpg'
+  //     },
+  //     {
+  //       small: 'assets/img/bugger/caterpillar/gallery/6.jpg',
+  //       medium: 'assets/img/bugger/caterpillar/gallery/6.jpg',
+  //       big: 'assets/img/bugger/caterpillar/gallery/6.jpg'
+  //     },
+  //   ];
   }
 
   wheelArray = [

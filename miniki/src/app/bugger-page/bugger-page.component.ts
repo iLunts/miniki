@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { GalleryItem, ImageItem } from '@ngx-gallery/core';
-import { NgxGalleryOptions, NgxGalleryImage } from 'ngx-gallery';
+// import { GalleryItem, ImageItem } from '@ngx-gallery/core';
+// import { NgxGalleryOptions, NgxGalleryImage } from 'ngx-gallery';
 import { FormArray } from '@angular/forms';
 
 @Component({
@@ -10,9 +10,9 @@ import { FormArray } from '@angular/forms';
 })
 export class BuggerPageComponent implements OnInit {
 
-  galleryOptions: NgxGalleryOptions[];
-  galleryImages: NgxGalleryImage[];
-
+  // galleryOptions: NgxGalleryOptions[];
+  // galleryImages: NgxGalleryImage[];
+  
   constructor() {
     this.buggerArray.sort((a, b) => {
       if (a.id < b.id) return -1;
@@ -23,36 +23,36 @@ export class BuggerPageComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.galleryOptions = [
-      {
-        // width: '600px',
-        // height: '400px',
-        width: '100%',
-        height: '600px',
-        fullWidth: false,
-        thumbnailsColumns: 10,
-        imagePercent: 100,
-        imageAutoPlay: true,
-        imageInfinityMove: true,
-        thumbnailsPercent: 20,
-        previewCloseOnEsc: true,
-        previewCloseOnClick: true,
+    // this.galleryOptions = [
+    //   {
+    //     // width: '600px',
+    //     // height: '400px',
+    //     width: '100%',
+    //     height: '600px',
+    //     fullWidth: false,
+    //     thumbnailsColumns: 10,
+    //     imagePercent: 100,
+    //     imageAutoPlay: true,
+    //     imageInfinityMove: true,
+    //     thumbnailsPercent: 20,
+    //     previewCloseOnEsc: true,
+    //     previewCloseOnClick: true,
 
-      }
-    ];
+    //   }
+    // ];
 
-    this.galleryImages = [
-      {
-        small: 'assets/img/bugger/caterpillar/gallery/5.jpg',
-        medium: 'assets/img/bugger/caterpillar/gallery/5.jpg',
-        big: 'assets/img/bugger/caterpillar/gallery/5.jpg'
-      },
-      {
-        small: 'assets/img/bugger/caterpillar/gallery/6.jpg',
-        medium: 'assets/img/bugger/caterpillar/gallery/6.jpg',
-        big: 'assets/img/bugger/caterpillar/gallery/6.jpg'
-      },
-    ];
+    // this.galleryImages = [
+    //   {
+    //     small: 'assets/img/bugger/caterpillar/gallery/5.jpg',
+    //     medium: 'assets/img/bugger/caterpillar/gallery/5.jpg',
+    //     big: 'assets/img/bugger/caterpillar/gallery/5.jpg'
+    //   },
+    //   {
+    //     small: 'assets/img/bugger/caterpillar/gallery/6.jpg',
+    //     medium: 'assets/img/bugger/caterpillar/gallery/6.jpg',
+    //     big: 'assets/img/bugger/caterpillar/gallery/6.jpg'
+    //   },
+    // ];
   }
 
   getRandomInt() {
@@ -220,6 +220,24 @@ export class BuggerPageComponent implements OnInit {
       gallery: [
         'assets/img/bugger/new-holland/gallery/1.jpg',
         'assets/img/bugger/new-holland/gallery/2.jpg',
+      ]
+    },
+    {
+      id: this.getRandomInt(),
+      category: 'Мини-экскаватор',
+      teaser: 'assets/img/bugger/jcb-holmogor/teaser-jcb-8015.jpg',
+      model: 'JCB 8015',
+      desc: 'Полный спектр земляных работ: рытье траншей под коммуникации, котлованы (ленточные фундаменты, газ, воду, канализацию, бассейны , и т.п). Глубина копания до 2,3 метров. Ширина ковша: 30 см, 40 см, 50 см. 100cм (планировочный). С опытным экипажем. Доставка до места работ осуществляется своим транспортом.',
+      video: '',
+      price: '45-40',
+      minTime: '4',
+      phones: [
+        {
+          operator: 'velcom', number: '+375 (29) 828-09-20'
+        }
+      ],
+      gallery: [
+        'assets/img/bugger/jcb-holmogor/gallery/1.jpg',
       ]
     },
   ];
