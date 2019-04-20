@@ -145,7 +145,7 @@ export class BuggerPageComponent implements OnInit {
       category: 'Мини-экскаватор',
       teaser: 'assets/img/bugger/bobcat/teaser-bobcat-e16.jpg',
       model: 'Bobcat e16',
-      desc: 'Аренда Мини-экскаватора. Все виды земляных работ. Копка траншей под фундаменты, воду и канализацию, электричество, газ, для установки забора, планировочные работы. Своя доставка.',
+      desc: 'Аренда Мини-экскаватора. Все виды земляных работ. Копка траншей под фундаменты, воду и канализацию, электричество, газ, для установки забора, планировочные работы. Монтаж канализации. Своя доставка.',
       video: '',
       price: '45-40',
       minTime: '4',
@@ -163,27 +163,27 @@ export class BuggerPageComponent implements OnInit {
       ]
 
     },
-    {
-      id: this.getRandomInt(),
-      category: 'Мини-экскаватор',
-      teaser: 'assets/img/bugger/kubota/teaser-kubota-kx36-3.jpg',
-      model: 'Kubota KX36-3',
-      desc: 'Аренда Мини-экскаватора. Все виды земляных работ. Копка траншей под фундаменты, воду и канализацию, электричество, газ, для установки забора, планировочные работы. Своя доставка.',
-      video: '',
-      price: '45-40',
-      minTime: '4',
-      phones: [
-        {
-          operator: 'velcom', number: '+375 (29) 902-21-92'
-        },
-        {
-          operator: 'mts', number: '+375 (29) 577-27-73'
-        },
-      ],
-      gallery: [
-        'assets/img/bugger/kubota/gallery/1.jpg',
-      ]
-    },
+    // {
+    //   id: this.getRandomInt(),
+    //   category: 'Мини-экскаватор',
+    //   teaser: 'assets/img/bugger/kubota/teaser-kubota-kx36-3.jpg',
+    //   model: 'Kubota KX36-3',
+    //   desc: 'Аренда Мини-экскаватора. Все виды земляных работ. Копка траншей под фундаменты, воду и канализацию, электричество, газ, для установки забора, планировочные работы. Своя доставка.',
+    //   video: '',
+    //   price: '45-40',
+    //   minTime: '4',
+    //   phones: [
+    //     {
+    //       operator: 'velcom', number: '+375 (29) 902-21-92'
+    //     },
+    //     {
+    //       operator: 'mts', number: '+375 (29) 577-27-73'
+    //     },
+    //   ],
+    //   gallery: [
+    //     'assets/img/bugger/kubota/gallery/1.jpg',
+    //   ]
+    // },
     {
       id: this.getRandomInt(),
       category: 'Мини-экскаватор',
@@ -225,9 +225,9 @@ export class BuggerPageComponent implements OnInit {
     {
       id: this.getRandomInt(),
       category: 'Мини-экскаватор',
-      teaser: 'assets/img/bugger/jcb-holmogor/teaser-jcb-8015.jpg',
-      model: 'JCB 8015',
-      desc: 'Полный спектр земляных работ: рытье траншей под коммуникации, котлованы (ленточные фундаменты, газ, воду, канализацию, бассейны , и т.п). Глубина копания до 2,3 метров. Ширина ковша: 30 см, 40 см, 50 см. 100cм (планировочный). С опытным экипажем. Доставка до места работ осуществляется своим транспортом.',
+      // teaser: 'assets/img/bugger/wacker-holmogor/teaser-wacker.png',
+      model: 'Wacker Neuson 1503',
+      desc: 'Полный спектр земляных работ: рытье траншей под коммуникации, котлованы (ленточные фундаменты, газ, воду, канализацию, бассейны , и т.п). Глубина копания до 2,5 метров. Ширина ковша: 30 см, 40 см, 50 см, 100cм (планировочный). С опытным экипажем. Доставка до места работ осуществляется своим транспортом.',
       video: '',
       price: '45-40',
       minTime: '4',
@@ -237,7 +237,7 @@ export class BuggerPageComponent implements OnInit {
         }
       ],
       gallery: [
-        'assets/img/bugger/jcb-holmogor/gallery/1.jpg',
+        'assets/img/bugger/wacker-holmogor/gallery/1.jpg',
       ]
     },
   ];
