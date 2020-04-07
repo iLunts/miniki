@@ -12,14 +12,15 @@ import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { TabsModule } from 'ngx-bootstrap';
 import { CollapseModule } from 'ngx-bootstrap';
-import { CarouselModule } from 'ngx-bootstrap';
-// import { GalleryModule } from '@ngx-gallery/core';
-// import { NgxGalleryModule } from 'ngx-gallery';
 import { BuggerPageComponent } from './bugger-page/bugger-page.component';
 import { LoaderPageComponent } from './loader-page/loader-page.component';
 import { WheelExcavatorPageComponent } from './wheel-excavator-page/wheel-excavator-page.component';
 import { TabMenuComponent } from './tab-menu/tab-menu.component';
-// import { GalleryModule } from '@ngx-gallery/core';
+
+// Bootstrap
+import { ModalModule } from 'ngx-bootstrap';
+import { CarouselModule } from 'ngx-bootstrap';
+
 
 const routes = [
   { path: '', component: BuggerPageComponent, pathMatch: 'full' },
@@ -50,9 +51,8 @@ const routes = [
     TabsModule.forRoot(),
     CollapseModule.forRoot(),
     CarouselModule.forRoot(),
-    // GalleryModule.forRoot(),
-    // NgxGalleryModule,
-    // GalleryModule.forRoot()
+    ModalModule.forRoot(),
+    CarouselModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -19,7 +19,7 @@
           <img [src]="item.teaser" alt="" *ngIf="item.teaser">
 
           <div class="gallery m--t-md">
-            <div class="gallery__item" *ngFor="let photo of item.gallery">
+            <div class="gallery__item" *ngFor="let photo of item.gallery" (click)="openModal(template, item.gallery)">
               <img [src]="photo" alt="">
             </div>
           </div>
@@ -59,3 +59,14 @@
     </div>
   </div>
 </section>
+
+
+<ng-template #template>
+  <div class="modal-body">
+    <carousel>
+      <slide *ngFor="let item of activeGallery">
+        <img [src]="item" alt="first slide">
+      </slide>
+    </carousel>
+  </div>
+</ng-template>

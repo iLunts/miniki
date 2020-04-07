@@ -10,14 +10,15 @@ import { FormArray } from '@angular/forms';
 })
 export class LoaderPageComponent implements OnInit {
 
-  // galleryOptions: NgxGalleryOptions[];
-  // galleryImages: NgxGalleryImage[];
-
   constructor() {
     this.loaderArray.sort((a, b) => {
-      if (a.id < b.id) return -1;
-      else if (a.id > b.id) return 1;
-      else return 0;
+      if (a.id < b.id) {
+        return -1;
+      } else if (a.id > b.id) {
+        return 1;
+      } else {
+        return 0;
+      }
     });
   }
 
@@ -59,6 +60,7 @@ export class LoaderPageComponent implements OnInit {
     return Math.floor(Math.random() * (100 - 1 + 1)) + 1;
   }
 
+  // tslint:disable-next-line: member-ordering
   loaderArray = [
     // Леша Админ
     {
@@ -68,7 +70,7 @@ export class LoaderPageComponent implements OnInit {
       model: 'Bobcat T750',
       desc: 'Грузоподъемность номинал 1500кг, / мах до 2000кг. Ширина режущей кромки ковша 2032 мм Высота выгрузки, 3, 35 м',
       video: '',
-      price: '60-70',
+      price: '65-75',
       minTime: '4',
       phones: [
         {
@@ -85,8 +87,8 @@ export class LoaderPageComponent implements OnInit {
     {
       id: this.getRandomInt(),
       category: 'Мини-погрузчик',
-      teaser: 'assets/img/loader/case/teaser-case-410.jpg',
-      model: 'CASE 410 3 series',
+      teaser: 'assets/img/loader/case-sr-200/teaser-case-sr-200.jpeg',
+      model: 'CASE SR 200',
       desc: 'Услуги мини-погрузчика, планировка, уборка снега, вывоз грунта, погрузочно-разгрузочные работы и т.д. На длительный срок скидки. С опытным водителем.',
       video: '',
       price: '45 - 50',
@@ -97,10 +99,31 @@ export class LoaderPageComponent implements OnInit {
         }
       ],
       gallery: [
-        'assets/img/loader/case/gallery/1.jpg',
-        'assets/img/loader/case/gallery/2.jpg',
+        'assets/img/loader/case-sr-200/gallery/1.jpg',
+        'assets/img/loader/case-sr-200/gallery/2.jpg',
       ]
     },
+
+    // Женя Морячок
+    // {
+    //   id: this.getRandomInt(),
+    //   category: 'Мини-погрузчик',
+    //   teaser: 'assets/img/loader/case/teaser-case-410.jpg',
+    //   model: 'CASE 410 3 series',
+    //   desc: 'Услуги мини-погрузчика, планировка, уборка снега, вывоз грунта, погрузочно-разгрузочные работы и т.д. На длительный срок скидки. С опытным водителем.',
+    //   video: '',
+    //   price: '45 - 50',
+    //   minTime: '4',
+    //   phones: [
+    //     {
+    //       operator: 'velcom', number: '+375 (29) 640-43-17'
+    //     }
+    //   ],
+    //   gallery: [
+    //     'assets/img/loader/case/gallery/1.jpg',
+    //     'assets/img/loader/case/gallery/2.jpg',
+    //   ]
+    // },
 
     // Женя Холмогор
     {
@@ -142,6 +165,27 @@ export class LoaderPageComponent implements OnInit {
       ],
       gallery: [
         'assets/img/loader/cat-226/gallery/1.jpg',
+      ]
+    },
+
+    // Миша
+    {
+      id: this.getRandomInt(),
+      category: 'Мини-погрузчик',
+      teaser: 'assets/img/loader/bobcat-753m/teaser-bobcat-753m.jpg',
+      model: 'Bobcat 753M',
+      desc: 'Планировка участка, погрузочно-разгрузочные работы, Ширина: 175 см, Вес: 2400 кг., Грузоподъемность: 650 кг.',
+      video: '',
+      price: '45-50',
+      minTime: '4',
+      phones: [
+        {
+          operator: 'velcom', number: '+375 (29) 623-40-34'
+        },
+      ],
+      gallery: [
+        'assets/img/loader/bobcat-753m/gallery/1.jpg',
+        'assets/img/loader/bobcat-753m/gallery/2.jpg',
       ]
     },
   ];

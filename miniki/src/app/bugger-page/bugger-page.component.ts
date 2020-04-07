@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-// import { GalleryItem, ImageItem } from '@ngx-gallery/core';
-// import { NgxGalleryOptions, NgxGalleryImage } from 'ngx-gallery';
-import { FormArray } from '@angular/forms';
+import { Component, OnInit, TemplateRef } from '@angular/core';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap';
 
 @Component({
   selector: 'app-bugger-page',
@@ -9,57 +7,8 @@ import { FormArray } from '@angular/forms';
   styleUrls: ['./bugger-page.component.less']
 })
 export class BuggerPageComponent implements OnInit {
-
-  // galleryOptions: NgxGalleryOptions[];
-  // galleryImages: NgxGalleryImage[];
-  
-  constructor() {
-    this.buggerArray.sort((a, b) => {
-      if (a.id < b.id) return -1;
-      else if (a.id > b.id) return 1;
-      else return 0;
-    });
-  }
-
-  ngOnInit(): void {
-
-    // this.galleryOptions = [
-    //   {
-    //     // width: '600px',
-    //     // height: '400px',
-    //     width: '100%',
-    //     height: '600px',
-    //     fullWidth: false,
-    //     thumbnailsColumns: 10,
-    //     imagePercent: 100,
-    //     imageAutoPlay: true,
-    //     imageInfinityMove: true,
-    //     thumbnailsPercent: 20,
-    //     previewCloseOnEsc: true,
-    //     previewCloseOnClick: true,
-
-    //   }
-    // ];
-
-    // this.galleryImages = [
-    //   {
-    //     small: 'assets/img/bugger/caterpillar/gallery/5.jpg',
-    //     medium: 'assets/img/bugger/caterpillar/gallery/5.jpg',
-    //     big: 'assets/img/bugger/caterpillar/gallery/5.jpg'
-    //   },
-    //   {
-    //     small: 'assets/img/bugger/caterpillar/gallery/6.jpg',
-    //     medium: 'assets/img/bugger/caterpillar/gallery/6.jpg',
-    //     big: 'assets/img/bugger/caterpillar/gallery/6.jpg'
-    //   },
-    // ];
-  }
-
-  getRandomInt() {
-    return Math.floor(Math.random() * (100 - 1 + 1)) + 1;
-  }
-
   buggerArray = [
+
     {
       id: this.getRandomInt(),
       category: 'Мини-экскаватор',
@@ -227,7 +176,7 @@ export class BuggerPageComponent implements OnInit {
       category: 'Мини-экскаватор',
       // teaser: 'assets/img/bugger/wacker-holmogor/teaser-wacker.png',
       model: 'Wacker Neuson 1503',
-      desc: 'Полный спектр земляных работ: рытье траншей под коммуникации, котлованы (ленточные фундаменты, газ, воду, канализацию, бассейны , и т.п). Глубина копания до 2,5 метров. Ширина ковша: 20 см, 30 см, 40 см, 50 см, 100cм (планировочный). С опытным экипажем. Доставка до места работ осуществляется своим транспортом.',
+      desc: 'Полный спектр земляных работ: рытье траншей под коммуникации, котлованы (ленточные фундаменты, газ, воду, канализацию, бассейны , и т.п). Глубина копания до 2,5 метров. Ширина ковша: 20 см, 30 см, 40 см, 50 см, 100cм (планировочный). Бур со шнеками 200, 250, 300 мм. До 2м глубина. С опытным экипажем. Доставка до места работ осуществляется своим транспортом.',
       video: '',
       price: '45-40',
       minTime: '4',
@@ -240,6 +189,54 @@ export class BuggerPageComponent implements OnInit {
         'assets/img/bugger/wacker-holmogor/gallery/1.jpg',
       ]
     },
+
+    // Миша
+    {
+      id: this.getRandomInt(),
+      category: 'Мини-экскаватор',
+      teaser: 'assets/img/bugger/kubota-kx41-3v/teaser-kubota-kx41-3v.jpg',
+      model: 'Kubota KX41-3V',
+      desc: 'Полный спектр земляных работ. Ковши: 20см, 30см, 40см, 100см (планировочный)',
+      video: '',
+      price: '40-45',
+      minTime: '4',
+      phones: [
+        {
+          operator: 'velcom', number: '+375 (29) 623-40-34'
+        },
+      ],
+      gallery: [
+        'assets/img/bugger/kubota-kx41-3v/gallery/1.jpg',
+        'assets/img/bugger/kubota-kx41-3v/gallery/2.jpg',
+      ]
+    },
   ];
+  modalRef: BsModalRef;
+  config = {
+    backdrop: true,
+    ignoreBackdropClick: false
+  };
+  activeGallery: any;
+
+  constructor(
+    private modalService: BsModalService,
+  ) {
+    this.buggerArray.sort((a, b) => {
+      if (a.id < b.id) return -1;
+      else if (a.id > b.id) return 1;
+      else return 0;
+    });
+  }
+
+  ngOnInit(): void {}
+
+  getRandomInt() {
+    return Math.floor(Math.random() * (100 - 1 + 1)) + 1;
+  }
+
+  openModal(template: TemplateRef<any>, gallery?) {
+    this.modalRef = this.modalService.show(template, this.config);
+    this.activeGallery = gallery;
+  }
 
 }
