@@ -1,0 +1,15 @@
+.diameter-list {
+  margin-bottom: 15px;
+}
+.diameter-list .diameter-list__title {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  margin-right: 5px;
+  color: #555;
+}
+.diameter-list .diameter-list__item {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  margin-right: 10px;
+  font-weight: 600;
+}

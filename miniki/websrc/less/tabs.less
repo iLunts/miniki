@@ -1,57 +1,55 @@
 @import 'variables';
+
 // ---------------------------------------------
 .nav-tabs {
-    border-bottom: none;
-    justify-content: center;
+  border-bottom: none;
+  justify-content: center;
+  border-bottom: 4px solid #464646;
+  margin-bottom: 20px;
+
+  .nav-item {
+    margin-bottom: -4px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    text-align: center;
+    outline: none;
+    box-shadow: none;
+    color: #787878;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
     border-bottom: 4px solid #464646;
-    margin-bottom: 20px;
+    transition: all .3s;
+    padding: 10px 40px;
 
-    .nav-item{
-        margin-bottom: -4px;
+    &:hover {
+      border-bottom-color: #666;
     }
 
-    .nav-link{
-        text-decoration: none;
-        outline: none;
-        box-shadow: none;
-        color: #787878;
-        text-transform: uppercase;
-        font-weight: 600;
-        letter-spacing: 1px;
-        border: none;
-        border-bottom: 4px solid #464646;
-        transition: all .3s;
-        padding: 10px 40px;
-
-        &:hover{
-            border-bottom-color: #666;
-        }
-        
-        &.active{
-            color: #222;
-            background: transparent;
-            border: none;
-            border-bottom: 4px solid @color-yellow;
-        }
-
-        .tab-img{
-            display: block;
-            width: 120px;
-            margin: 0 auto 10px;
-
-            &.tab-img--sm{
-                padding: 15px;
-            }
-        }
+    &.active {
+      color: #222;
+      background: transparent;
+      border: none;
+      border-bottom: 4px solid @color-yellow;
     }
+
+    .tab-img {
+      display: block;
+      width: 120px;
+      margin: 0 auto 10px;
+
+      &.tab-img--sm {
+        padding: 15px;
+      }
+    }
+  }
 }
 
-.tab-container{
-    display: block;
+.tab-container {
+  display: block;
 }
 
-@media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max){
-
-
-
-}
+@media only screen and (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max) {}

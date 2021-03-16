@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-// import { GalleryItem, ImageItem } from '@ngx-gallery/core';
-// import { NgxGalleryOptions, NgxGalleryImage } from 'ngx-gallery';
-import { FormArray } from '@angular/forms';
+import { Component, OnInit, TemplateRef } from '@angular/core';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap';
 
 @Component({
   selector: 'app-loader-page',
@@ -9,8 +7,16 @@ import { FormArray } from '@angular/forms';
   styleUrls: ['./loader-page.component.less']
 })
 export class LoaderPageComponent implements OnInit {
+  modalRef: BsModalRef;
+  config = {
+    backdrop: true,
+    ignoreBackdropClick: false
+  };
+  activeGallery: any;
 
-  constructor() {
+  constructor(
+    private modalService: BsModalService,
+  ) {
     this.loaderArray.sort((a, b) => {
       if (a.id < b.id) {
         return -1;
@@ -23,7 +29,6 @@ export class LoaderPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
     // this.galleryOptions = [
     //   {
     //     // width: '600px',
@@ -70,7 +75,7 @@ export class LoaderPageComponent implements OnInit {
       model: 'Bobcat T750',
       desc: 'Грузоподъемность номинал 1500кг, / мах до 2000кг. Ширина режущей кромки ковша 2032 мм Высота выгрузки, 3, 35 м',
       video: '',
-      price: '65-75',
+      price: '70-80',
       minTime: '4',
       phones: [
         {
@@ -91,7 +96,7 @@ export class LoaderPageComponent implements OnInit {
       model: 'CASE SR 200',
       desc: 'Услуги мини-погрузчика, планировка, уборка снега, вывоз грунта, погрузочно-разгрузочные работы и т.д. На длительный срок скидки. С опытным водителем.',
       video: '',
-      price: '45 - 50',
+      price: '50',
       minTime: '4',
       phones: [
         {
@@ -133,7 +138,7 @@ export class LoaderPageComponent implements OnInit {
       model: 'Caterpiller 216B',
       desc: 'Минимальная ширина проезда 160см, высота 225см. Ландшафтные работы, Планировка участка, Уборочные работы, Погрузочно-разгрузочные работы, Подготовка основания под застройку, под укладку тротуарной плитки, камня, брусчатки; отсыпка фундаментов и планировка растительного грунта при устройстве газонов; Работа в стесненных условиях. Погрузка сыпучих материалов в 6-10 кубовые грузовики, Доставка до места работ осуществляется своим транспортом.',
       video: '',
-      price: '45-50',
+      price: '50',
       minTime: '4',
       phones: [
         {
@@ -153,7 +158,7 @@ export class LoaderPageComponent implements OnInit {
       model: 'Caterpiller 226B',
       desc: 'Планировка участка, уборочные работы, погрузочно-разгрузочные работы, подготовка основания под укладку тротуарной плитки, отсыпка и планировка растительного грунта при устройстве газонов, работы по строительству и ремонту дорог, Работа в зданиях, складских помещениях и на строительных площадках, подвоз бетона, тротуарной плитки, борта, кирпича и строительных материалов, Погрузка сыпучих материалов, своя доставка. Наличная и безналичная форма оплаты.',
       video: '',
-      price: '45-50',
+      price: '50',
       minTime: '4',
       phones: [
         {
@@ -176,7 +181,7 @@ export class LoaderPageComponent implements OnInit {
       model: 'Bobcat 753M',
       desc: 'Планировка участка, погрузочно-разгрузочные работы, Ширина: 175 см, Вес: 2400 кг., Грузоподъемность: 650 кг.',
       video: '',
-      price: '45-50',
+      price: '50',
       minTime: '4',
       phones: [
         {
@@ -188,6 +193,32 @@ export class LoaderPageComponent implements OnInit {
         'assets/img/loader/bobcat-753m/gallery/2.jpg',
       ]
     },
+
+    // Слава MS
+    {
+      id: this.getRandomInt(),
+      category: 'Мини-погрузчик',
+      teaser: 'assets/img/loader/case-sr-175/teaser-case-sr-175.jpg',
+      model: 'CASE SR 175',
+      desc: 'Case SR 175. ширина 160см, ковш.вилы.бур.молот Delta F4',
+      video: '',
+      price: '50',
+      minTime: '4',
+      phones: [
+        {
+          operator: 'velcom', number: '+375 (29) 651-25-01'
+        },
+      ],
+      gallery: [
+        'assets/img/loader/case-sr-175/gallery/1.jpg',
+        'assets/img/loader/case-sr-175/gallery/2.jpg',
+      ]
+    },
   ];
+
+  openModal(template: TemplateRef<any>, gallery?) {
+    this.modalRef = this.modalService.show(template, this.config);
+    this.activeGallery = gallery;
+  }
 
 }

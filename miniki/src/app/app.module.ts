@@ -15,6 +15,7 @@ import { CollapseModule } from 'ngx-bootstrap';
 import { BuggerPageComponent } from './bugger-page/bugger-page.component';
 import { LoaderPageComponent } from './loader-page/loader-page.component';
 import { WheelExcavatorPageComponent } from './wheel-excavator-page/wheel-excavator-page.component';
+import { HydraulicDrillPageComponent } from './hydraulic-drill-page/hydraulic-drill-page.component';
 import { TabMenuComponent } from './tab-menu/tab-menu.component';
 
 // Bootstrap
@@ -27,6 +28,8 @@ const routes = [
   { path: 'mini-bugger', component: BuggerPageComponent },
   { path: 'mini-loader', component: LoaderPageComponent },
   { path: 'wheel-excavator', component: WheelExcavatorPageComponent },
+  { path: 'hydraulic-drill', component: HydraulicDrillPageComponent },
+  // { path: 'hydraulic-hammer', component: WheelExcavatorPageComponent },
   { path: 'service', component: ServicePageComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
@@ -41,6 +44,7 @@ const routes = [
     BuggerPageComponent,
     LoaderPageComponent,
     WheelExcavatorPageComponent,
+    HydraulicDrillPageComponent,
     PageNotFoundComponent,
     TabMenuComponent
   ],
