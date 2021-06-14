@@ -98,6 +98,7 @@ export class BuggerPageComponent implements OnInit {
       ],
       gallery: [
         'assets/img/bugger/kobelco/gallery/1.jpg',
+        'assets/img/bugger/kobelco/gallery/2.jpg',
       ]
 
     },
