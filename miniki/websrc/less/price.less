@@ -1,59 +1,55 @@
-@import 'variables.less';
+// @import "variables.less";
 // ----------------------------------------
-.price{
+.price {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+
+  // ------------------------------------
+  // All modificators
+  // ------------------------------------
+
+  // ------------------------------------
+  // All elements
+  // ------------------------------------
+
+  & + & {
+    margin-left: 15px;
+    padding-left: 15px;
+    border-left: 1px dashed #ddd;
+  }
+
+  // Element '.price .price__body'
+  & &__body {
+  }
+
+  // Element '.price .price__dig'
+  & &__dig {
+    font-size: 3.5rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    margin-right: 5px;
+    white-space: nowrap;
+    color: #333;
+  }
+
+  // Element '.price .price__currency'
+  & &__currency {
     position: relative;
-    display: inline-flex;
-    align-items: center;
+    display: block;
+    font-size: 1.3rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 3px;
+    white-space: nowrap;
+    text-align: left;
+  }
 
-    // ------------------------------------
-    // All modificators
-    // ------------------------------------
-
-    
-    // ------------------------------------
-    // All elements
-    // ------------------------------------
-
-    & + &{
-        margin-left: 15px;
-        padding-left: 15px;
-        border-left: 1px dashed #ddd;
-    }
-
-    // Element '.price .price__body'
-    & &__body{
-
-    }
-
-    // Element '.price .price__dig'
-    & &__dig{
-        font-size: 4rem;
-        line-height: 2.2rem;
-        font-weight: 500;
-        margin-right: 5px;
-        white-space: nowrap;
-        color: #333;
-    }
-    
-    // Element '.price .price__currency'
-    & &__currency{
-        position: relative;
-        display: block;
-        font-size: 1.3rem;
-        border-bottom: 1px solid #ddd;
-        padding-bottom: 3px;
-        white-space: nowrap;
-        text-align: left;
-    }
-    
-    // Element '.price .price__in'
-    & &__in{
-        position: relative;
-        display: block;
-        font-size: 1.3rem;
-        margin-top: 2px;
-        text-align: left;
-    }
-
+  // Element '.price .price__in'
+  & &__in {
+    position: relative;
+    display: block;
+    font-size: 1.3rem;
+    margin-top: 2px;
+    text-align: left;
+  }
 }
-
