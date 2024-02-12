@@ -52,7 +52,7 @@ export class WheelExcavatorPageComponent implements OnInit {
       model: "Volvo EW140",
       desc: "Предлагаем на выгодных условиях в аренду экскаватор колесный Volvo EW 140, 0.8 м3 с экипажем.",
       video: "",
-      price: "80",
+      price: "100-110",
       minTime: "8",
       phones: [
         {

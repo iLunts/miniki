@@ -14,7 +14,7 @@ export class HydraulicDrillPageComponent implements OnInit {
       model: "Delta RD3",
       desc: "Предлагаем на выгодных условиях в аренду гидравлический бур на базе мини-экскаватора Volvo EB20 XTV, с экипажем.",
       video: "",
-      price: "100",
+      price: "120",
       minTime: "4",
       diameter: [200, 250, 300, 500, 600],
       distance: "2 метра",
@@ -36,7 +36,7 @@ export class HydraulicDrillPageComponent implements OnInit {
       distance: "2.3 метра",
       desc: "Услуги по бурению отверстий на базе мини-погрузчика CASE, глубиной 2.3 метра. На длительный срок скидки. С опытным водителем.",
       video: "",
-      price: "100",
+      price: "120",
       minTime: "4",
       phones: [
         {
@@ -59,7 +59,7 @@ export class HydraulicDrillPageComponent implements OnInit {
       distance: "2 метра",
       desc: "Услуги по бурению отверстий на базе мини-экскаватора Wacker Neuson 1503. С опытным оператором.",
       video: "",
-      price: "100",
+      price: "120",
       minTime: "4",
       phones: [
         {
@@ -79,7 +79,7 @@ export class HydraulicDrillPageComponent implements OnInit {
       distance: "2 метра",
       desc: "Услуги по бурению отверстий на базе мини-экскаватора Kubota KX41-3V. С опытным оператором.",
       video: "",
-      price: "100",
+      price: "120",
       minTime: "4",
       phones: [
         {
@@ -99,7 +99,7 @@ export class HydraulicDrillPageComponent implements OnInit {
       distance: "2.3 метра",
       desc: "Услуги по бурению отверстий на базе мини-погрузчика CASE SR 175, глубиной 2.3 метра. С опытным водителем.",
       video: "",
-      price: "100",
+      price: "120",
       minTime: "4",
       phones: [
         {
@@ -123,7 +123,7 @@ export class HydraulicDrillPageComponent implements OnInit {
       distance: "4 метра",
       desc: "Услуги по бурению отверстий на базе мини-погрузчика Wacker Neuson 50Z3, глубиной 4 метра. С опытным водителем.",
       video: "",
-      price: "100",
+      price: "120",
       minTime: "4",
       phones: [
         {
