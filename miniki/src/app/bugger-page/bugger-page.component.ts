@@ -96,7 +96,7 @@ export class BuggerPageComponent implements OnInit {
       phones: [
         {
           operator: "velcom",
-          number: "+375 (29) 640-43-17",
+          number: "+375 (29) 687-32-11",
         },
       ],
       gallery: [

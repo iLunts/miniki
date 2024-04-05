@@ -41,7 +41,7 @@ export class HydraulicDrillPageComponent implements OnInit {
       phones: [
         {
           operator: "velcom",
-          number: "+375 (29) 640-43-17",
+          number: "+375 (29) 687-32-11",
         },
       ],
       gallery: [
@@ -119,8 +119,8 @@ export class HydraulicDrillPageComponent implements OnInit {
       teaser:
         "assets/img/drill/wacker-neuson-50z3/teaser-wacker-neuson-50z3-drill.jpg",
       model: "Delta",
-      diameter: [250, 300, 400],
-      distance: "4 метра",
+      diameter: [200, 250, 300, 400],
+      distance: "5 метров",
       desc: "Услуги по бурению отверстий на базе мини-погрузчика Wacker Neuson 50Z3, глубиной 4 метра. С опытным водителем.",
       video: "",
       price: "120",

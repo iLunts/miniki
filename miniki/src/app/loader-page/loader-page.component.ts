@@ -98,7 +98,7 @@ export class LoaderPageComponent implements OnInit {
       phones: [
         {
           operator: "velcom",
-          number: "+375 (29) 640-43-17",
+          number: "+375 (29) 687-32-11",
         },
       ],
       gallery: [
@@ -119,7 +119,7 @@ export class LoaderPageComponent implements OnInit {
     //   minTime: '4',
     //   phones: [
     //     {
-    //       operator: 'velcom', number: '+375 (29) 640-43-17'
+    //       operator: 'velcom', number: '+375 (29) 687-32-11'
     //     }
     //   ],
     //   gallery: [
