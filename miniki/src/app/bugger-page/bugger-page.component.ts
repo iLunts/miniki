@@ -23,7 +23,7 @@ export class BuggerPageComponent implements OnInit {
       minTime: "4",
       phones: [
         {
-          operator: "velcom",
+          operator: "a1",
           number: "+375 (29) 601-22-11",
         },
       ],
@@ -46,7 +46,7 @@ export class BuggerPageComponent implements OnInit {
       isHammer: true,
       phones: [
         {
-          operator: "velcom",
+          operator: "a1",
           number: "+375 (29) 601-22-11",
         },
       ],
@@ -71,7 +71,7 @@ export class BuggerPageComponent implements OnInit {
       isHammer: true,
       phones: [
         {
-          operator: "velcom",
+          operator: "a1",
           number: "+375 (29) 683-25-03",
         },
       ],
@@ -81,29 +81,29 @@ export class BuggerPageComponent implements OnInit {
         // 'assets/img/bugger/wacker-neuson-50z3/gallery/2.jpg',
       ],
     },
-    {
-      id: this.getRandomInt(),
-      category: "Средний мини-экскаватор",
-      teaser: "assets/img/bugger/kobelco/teaser-kobelco-sk35-sr.jpg",
-      model: "Kobelco SK30SR",
-      desc: "Осуществляем все виды работ мини-экскаватором KOBELCO SK30SR. Выравнивание и выемка грунта, планирование, корчевание, рытьё котлованов и траншей, установка колодезных колец. Ответственно подходим к каждому объекту. Работаем без выходных. Индивидуальный подход к каждому клиенту.",
-      video: "",
-      price: "80-85",
-      minTime: "4",
-      weight: "3",
-      buckets: [30, 40, 50, 60, "120(планировочный) "],
-      isHammer: true,
-      phones: [
-        {
-          operator: "velcom",
-          number: "+375 (29) 687-32-11",
-        },
-      ],
-      gallery: [
-        "assets/img/bugger/kobelco/gallery/1.jpg",
-        "assets/img/bugger/kobelco/gallery/2.jpg",
-      ],
-    },
+    // {
+    //   id: this.getRandomInt(),
+    //   category: "Средний мини-экскаватор",
+    //   teaser: "assets/img/bugger/kobelco/teaser-kobelco-sk35-sr.jpg",
+    //   model: "Kobelco SK30SR",
+    //   desc: "Осуществляем все виды работ мини-экскаватором KOBELCO SK30SR. Выравнивание и выемка грунта, планирование, корчевание, рытьё котлованов и траншей, установка колодезных колец. Ответственно подходим к каждому объекту. Работаем без выходных. Индивидуальный подход к каждому клиенту.",
+    //   video: "",
+    //   price: "80-85",
+    //   minTime: "4",
+    //   weight: "3",
+    //   buckets: [30, 40, 50, 60, "120(планировочный) "],
+    //   isHammer: true,
+    //   phones: [
+    //     {
+    //       operator: "a1",
+    //       number: "+375 (29) 687-32-11",
+    //     },
+    //   ],
+    //   gallery: [
+    //     "assets/img/bugger/kobelco/gallery/1.jpg",
+    //     "assets/img/bugger/kobelco/gallery/2.jpg",
+    //   ],
+    // },
     {
       id: this.getRandomInt(),
       category: "Малый мини-экскаватор",
@@ -118,7 +118,7 @@ export class BuggerPageComponent implements OnInit {
       isHammer: true,
       phones: [
         {
-          operator: "velcom",
+          operator: "a1",
           number: "+375 (29) 902-21-92",
         },
         {
@@ -175,29 +175,35 @@ export class BuggerPageComponent implements OnInit {
     //     'assets/img/bugger/komatsu/gallery/2.jpg',
     //   ]
     // },
-    {
-      id: this.getRandomInt(),
-      category: "Средний мини-экскаватор",
-      teaser: "assets/img/bugger/new-holland/teaser-new-holland.jpg",
-      model: "NEW HOLLAND E27.2SR",
-      desc: "Аренда Мини-экскаватора. Бур от 20 - до 60..",
-      video: "",
-      price: "80-85",
-      minTime: "4",
-      weight: "2.8",
-      buckets: [20, 30, 40, 50, 60, 70],
-      isHammer: true,
-      phones: [
-        {
-          operator: "velcom",
-          number: "+375 (29) 651-25-01",
-        },
-      ],
-      gallery: [
-        "assets/img/bugger/new-holland/gallery/1.jpg",
-        "assets/img/bugger/new-holland/gallery/2.jpg",
-      ],
-    },
+
+    //
+    //
+    // СЛАВА MS
+    //
+    //
+    // {
+    //   id: this.getRandomInt(),
+    //   category: "Средний мини-экскаватор",
+    //   teaser: "assets/img/bugger/new-holland/teaser-new-holland.jpg",
+    //   model: "NEW HOLLAND E27.2SR",
+    //   desc: "Аренда Мини-экскаватора. Бур от 20 - до 60..",
+    //   video: "",
+    //   price: "80-85",
+    //   minTime: "4",
+    //   weight: "2.8",
+    //   buckets: [20, 30, 40, 50, 60, 70],
+    //   isHammer: true,
+    //   phones: [
+    //     {
+    //       operator: "a1",
+    //       number: "+375 (29) 651-25-01",
+    //     },
+    //   ],
+    //   gallery: [
+    //     "assets/img/bugger/new-holland/gallery/1.jpg",
+    //     "assets/img/bugger/new-holland/gallery/2.jpg",
+    //   ],
+    // },
     {
       id: this.getRandomInt(),
       category: "Малый мини-экскаватор",
@@ -212,7 +218,7 @@ export class BuggerPageComponent implements OnInit {
       isHammer: true,
       phones: [
         {
-          operator: "velcom",
+          operator: "a1",
           number: "+375 (29) 828-09-20",
         },
       ],
@@ -234,7 +240,7 @@ export class BuggerPageComponent implements OnInit {
       isHammer: true,
       phones: [
         {
-          operator: "velcom",
+          operator: "a1",
           number: "+375 (29) 623-40-34",
         },
       ],

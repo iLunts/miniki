@@ -75,7 +75,7 @@ export class LoaderPageComponent implements OnInit {
       minTime: "4",
       phones: [
         {
-          operator: "velcom",
+          operator: "a1",
           number: "+375 (29) 683-25-03",
         },
       ],
@@ -86,26 +86,26 @@ export class LoaderPageComponent implements OnInit {
     },
 
     // Женя Морячок
-    {
-      id: this.getRandomInt(),
-      category: "Мини-погрузчик",
-      teaser: "assets/img/loader/case-sr-200/teaser-case-sr-200.jpeg",
-      model: "CASE SR 200",
-      desc: "Услуги мини-погрузчика, планировка, уборка снега, вывоз грунта, погрузочно-разгрузочные работы и т.д. На длительный срок скидки. С опытным водителем.",
-      video: "",
-      price: "80-85",
-      minTime: "4",
-      phones: [
-        {
-          operator: "velcom",
-          number: "+375 (29) 687-32-11",
-        },
-      ],
-      gallery: [
-        "assets/img/loader/case-sr-200/gallery/1.jpg",
-        "assets/img/loader/case-sr-200/gallery/2.jpg",
-      ],
-    },
+    // {
+    //   id: this.getRandomInt(),
+    //   category: "Мини-погрузчик",
+    //   teaser: "assets/img/loader/case-sr-200/teaser-case-sr-200.jpeg",
+    //   model: "CASE SR 200",
+    //   desc: "Услуги мини-погрузчика, планировка, уборка снега, вывоз грунта, погрузочно-разгрузочные работы и т.д. На длительный срок скидки. С опытным водителем.",
+    //   video: "",
+    //   price: "80-85",
+    //   minTime: "4",
+    //   phones: [
+    //     {
+    //       operator: "a1",
+    //       number: "+375 (29) 687-32-11",
+    //     },
+    //   ],
+    //   gallery: [
+    //     "assets/img/loader/case-sr-200/gallery/1.jpg",
+    //     "assets/img/loader/case-sr-200/gallery/2.jpg",
+    //   ],
+    // },
 
     // Женя Морячок
     // {
@@ -140,7 +140,7 @@ export class LoaderPageComponent implements OnInit {
       minTime: "4",
       phones: [
         {
-          operator: "velcom",
+          operator: "a1",
           number: "+375 (29) 828-09-20",
         },
       ],
@@ -159,7 +159,7 @@ export class LoaderPageComponent implements OnInit {
       minTime: "4",
       phones: [
         {
-          operator: "velcom",
+          operator: "a1",
           number: "+375 (29) 902-21-92",
         },
         {
@@ -182,7 +182,7 @@ export class LoaderPageComponent implements OnInit {
       minTime: "4",
       phones: [
         {
-          operator: "velcom",
+          operator: "a1",
           number: "+375 (29) 623-40-34",
         },
       ],
@@ -193,26 +193,26 @@ export class LoaderPageComponent implements OnInit {
     },
 
     // Слава MS
-    {
-      id: this.getRandomInt(),
-      category: "Мини-погрузчик",
-      teaser: "assets/img/loader/case-sr-175/teaser-case-sr-175.jpg",
-      model: "CASE SR 175",
-      desc: "Case SR 175. ширина 160см, ковш.вилы.бур.молот Delta F4",
-      video: "",
-      price: "80-85",
-      minTime: "4",
-      phones: [
-        {
-          operator: "velcom",
-          number: "+375 (29) 651-25-01",
-        },
-      ],
-      gallery: [
-        "assets/img/loader/case-sr-175/gallery/1.jpg",
-        "assets/img/loader/case-sr-175/gallery/2.jpg",
-      ],
-    },
+    // {
+    //   id: this.getRandomInt(),
+    //   category: "Мини-погрузчик",
+    //   teaser: "assets/img/loader/case-sr-175/teaser-case-sr-175.jpg",
+    //   model: "CASE SR 175",
+    //   desc: "Case SR 175. ширина 160см, ковш.вилы.бур.молот Delta F4",
+    //   video: "",
+    //   price: "80-85",
+    //   minTime: "4",
+    //   phones: [
+    //     {
+    //       operator: "a1",
+    //       number: "+375 (29) 651-25-01",
+    //     },
+    //   ],
+    //   gallery: [
+    //     "assets/img/loader/case-sr-175/gallery/1.jpg",
+    //     "assets/img/loader/case-sr-175/gallery/2.jpg",
+    //   ],
+    // },
   ];
 
   openModal(template: TemplateRef<any>, gallery?) {

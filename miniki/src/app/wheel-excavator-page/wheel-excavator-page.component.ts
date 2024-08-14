@@ -56,7 +56,7 @@ export class WheelExcavatorPageComponent implements OnInit {
       minTime: "8",
       phones: [
         {
-          operator: "velcom",
+          operator: "a1",
           number: "+375 (29) 601-22-11",
         },
       ],
